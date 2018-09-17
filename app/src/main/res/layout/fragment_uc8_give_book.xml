@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ecfc99"
+    tools:context=".uc8_give_book">
+
+
+    <EditText
+        android:id="@+id/uc8_writer_edit"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/uc8_wrtr_txt"
+        android:layout_marginEnd="13dp"
+        android:ems="10"
+        android:hint="Writer Name"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="false"
+        android:textSize="14sp"
+        android:layout_marginRight="13dp"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/uc8_wrtr_txt"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/uc8_pname_txt"
+        android:layout_marginTop="137dp"
+        android:text="Writer Name:"
+        android:layout_alignLeft="@+id/uc7_pname_txt" />
+
+    <TextView
+        android:id="@+id/uc8_edition_txt"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/uc8_pname_txt"
+        android:layout_marginTop="197dp"
+        android:text="Edition"
+        android:layout_alignLeft="@+id/uc8_pname_txt" />
+
+    <TextView
+        android:id="@+id/uc8_pname_txt"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:text="PDF Name:"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp" />
+
+    <EditText
+        android:id="@+id/uc8_pname_edit"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/uc8_pname_txt"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="false"
+        android:textSize="14sp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true" />
+
+    <EditText
+        android:id="@+id/uc8_edition_edit"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/uc8_pname_edit"
+        android:layout_alignTop="@+id/uc8_edition_txt"
+        android:ems="10"
+        android:hint="Edition"
+        android:inputType="number"
+        android:selectAllOnFocus="false"
+        android:textSize="14sp"
+        android:layout_alignLeft="@+id/uc8_pname_edit" />
+
+    <Button
+        android:id="@+id/uc8_submit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="41dp"
+        android:text="Submit" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_below="@id/uc8_edition_txt"
+        android:layout_alignStart="@+id/uc8_wrtr_txt"
+        android:layout_marginTop="261dp">
+
+        <RadioButton
+            android:id="@+id/uc8_donate_rbtn"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_weight="1"
+            android:text="Donate the book"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/uc8_rent_rbtn"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_weight="1"
+            android:text="Rent the book"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/uc8_sale_rbtn"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_weight="1"
+            android:text="Sale the book"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+
+</RelativeLayout>
